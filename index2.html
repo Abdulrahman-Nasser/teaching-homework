@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إجابات أسئلة إدارة البيئة والتفاعل الصفي</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header h2 {
+            color: #7f8c8d;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .header .course-info {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #eee;
+            color: #555;
+            font-size: 14px;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .question-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+        }
+
+        .question-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .question-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .answer-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .answer-title {
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .answer-title::before {
+            content: "✓";
+            background: #27ae60;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+        }
+
+        .answer-content {
+            color: #444;
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .answer-content ul {
+            list-style: none;
+            padding-right: 0;
+        }
+
+        .answer-content ul li {
+            padding: 8px 0;
+            padding-right: 25px;
+            position: relative;
+        }
+
+        .answer-content ul li::before {
+            content: "•";
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+            font-size: 20px;
+        }
+
+        .page-reference {
+            display: inline-block;
+            background: #e74c3c;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .page-reference::before {
+            content: "📄 ";
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 22px;
+            }
+            .question-text {
+                font-size: 16px;
+            }
+            .question-card {
+                padding: 15px;
+            }
+        }
+    </style>
+<base target="_blank">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 إجابات أسئلة مقرر إدارة البيئة والتفاعل الصفي</h1>
+            <h2>الدبلوم العامة (نظام العام الواحد) - أسئلة للمناقشة</h2>
+            <div class="course-info">
+                قسم التربية المقارنة والإدارة التعليمية | العام الدراسي 2025/2026م
+            </div>
+        </div>
+
+        <!-- السؤال السادس عشر -->
+        <div class="question-card">
+            <span class="question-number">السؤال السادس عشر</span>
+            <div class="question-text">
+                وضح العوامل التي تلعب دوراً مهماً في التعلم الصفي.
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>تتأثر الإدارة الصفية والتعلم الصفي بعدة عوامل رئيسية يمكن تصنيفها كالتالي:</p>
+                    <ul>
+                        <li><strong>عوامل متعلقة بالمعلم:</strong> خصائص المعلم الشخصية والأدائية، تأهيله الأكاديمي والمهني، اتجاهاته وأساليبه في التدريس، نظرته للطلاب، قدرته على التفاعل الصفي، ومهاراته في طرح الأسئلة وتفسير المعارف.</li>
+                        <li><strong>عوامل متعلقة بالطالب:</strong> سن الطالب، سلوكه، مستواه المعيشي، خصائصه الشخصية، مقدار استجابته للتعلم، ومبادرته في المشاركة.</li>
+                        <li><strong>عوامل متعلقة بالبيئة التعليمية:</strong> توفر مبنى مدرسي مجهز، جاهزية غرفة الصف (الإضاءة، الاتساع، التهوية، التكييف)، وتنظيم المقاعد والوسائل التعليمية.</li>
+                        <li><strong>عوامل متعلقة بالمنهج الدراسي:</strong> إشباع المنهج لحاجات الطلبة، تناسبه مع سن الطالب، وتوافقه مع الفترة الزمنية للفصل الدراسي.</li>
+                        <li><strong>النظام المدرسي:</strong> حجم المدرسة، سعة الصف، الإمكانات المدرسية، وإدارة المدرسة.</li>
+                        <li><strong>الجو السيكولوجي السائد:</strong> المناخ النفسي الآمن والداعم داخل الصف.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 63-65 (مراجع متعددة)</span>
+        </div>
+
+        <!-- السؤال الخامس عشر -->
+        <div class="question-card">
+            <span class="question-number">السؤال الخامس عشر</span>
+            <div class="question-text">
+                وضح أهمية الإدارة الصفية.
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>تكتسب الإدارة الصفية أهميتها من كونها الأساس لبيئة تعليمية منتجة، وتتمثل أهميتها في:</p>
+                    <ul>
+                        <li><strong>التحصيل الأكاديمي:</strong> تدعم الإدارة الصفية الفعالة تعلم الطلاب وإنجازاتهم بشكل مباشر، حيث تسجل الصفوف المنظمة نتائج أعلى في الاختبارات.</li>
+                        <li><strong>سلوك الطلاب والانضباط:</strong> تلعب دوراً رئيسياً في تشكيل أنماط السلوك الإيجابي وتعزيز الانضباط الذاتي وتحمل المسؤولية.</li>
+                        <li><strong>التفاعل والمشاركة الصفية:</strong> الصف المنظم يعزز المشاركة الفعالة والتفاعل، ويشجع على العمل الجماعي والتفكير النقدي.</li>
+                        <li><strong>الأثر طويل المدى:</strong> ينقل الطلاب عادات الانضباط وإدارة الوقت والتعاون إلى حياتهم المهنية المستقبلية.</li>
+                        <li><strong>تقليل التوتر:</strong> للمعلمين، تقلل مهارات الإدارة القوية من التوتر والإرهاق وتزيد من الرضا الوظيفي.</li>
+                        <li><strong>خلق بيئة آمنة وشاملة:</strong> تعزز السلامة داخل بيئة التعلم وتشجع على الاستقلالية والتعلم المستقل.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 2-4 (مراجع متعددة)</span>
+        </div>
+
+        <!-- السؤال الرابع عشر -->
+        <div class="question-card">
+            <span class="question-number">السؤال الرابع عشر</span>
+            <div class="question-text">
+                وضح أهمية الإدارة الصفية.
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>(نفس إجابة السؤال الخامس عشر - تكرار في الكتاب)</p>
+                    <ul>
+                        <li>تحقيق التحصيل الأكاديمي المنشود للطلاب.</li>
+                        <li>تنظيم البيئة الصفية المادية والنفسية.</li>
+                        <li>إرساء الانضباط البنّاء عبر الروتينات والإجراءات.</li>
+                        <li>تعزيز السلوك الإيجابي والانضباط الذاتي.</li>
+                        <li>زيادة مشاركة الطلاب الفعالة في الأنشطة.</li>
+                        <li>بناء مجتمع داعم قائم على الاحترام والتعاون.</li>
+                        <li>تقليل المشكلات السلوكية وتوفير وقت أكبر للتدريس.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 2-4 (مراجع متعددة)</span>
+        </div>
+
+        <!-- السؤال الثالث عشر -->
+        <div class="question-card">
+            <span class="question-number">السؤال الثالث عشر</span>
+            <div class="question-text">
+                ناقش أهم الأدوات المستقبلية للمعلم في تفعيل الإدارة الصفية على ضوء مدخل إدارة الجودة الشاملة.
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>في ضوء مدخل إدارة الجودة الشاملة (TQM)، تتضمن الأدوات المستقبلية للمعلم:</p>
+                    <ul>
+                        <li><strong>فرق العمل:</strong> بناء فرق عمل داخل الصف لتنمية التعاون الجماعي وتبادل الأدوار القيادية بين الطلاب.</li>
+                        <li><strong>التحسين المستمر:</strong> تبني فلسفة التحسين المستمر في العمليات التعليمية والإدارية.</li>
+                        <li><strong>التركيز على العملاء:</strong> اعتبار الطلاب وأولياء الأمور عملاءً رئيسيين للعملية التعليمية.</li>
+                        <li><strong>المشاركة الجماعية:</strong> إشراك الطلاب في اتخاذ القرارات المتعلقة بالأنشطة والقواعد الصفية.</li>
+                        <li><strong>إدارة المعلومات والبيانات:</strong> استخدام التقنيات الحديثة لمتابعة أداء الطلاب وتقييمهم.</li>
+                        <li><strong>القيادة الفعالة:</strong> تبني أسلوب القيادة الديمقراطية الشورية التي تعزز الثقة والاحترام المتبادل.</li>
+                        <li><strong>تبادل الأدوار:</strong> تمكين الطلاب من تبادل أدوار القيادة فيما بينهم داخل الفريق.</li>
+                        <li><strong>الشراكة المجتمعية:</strong> تحقيق التعاون مع أولياء الأمور ومؤسسات المجتمع المحلي.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 73-76 (مراجع متعددة)</span>
+        </div>
+
+        <!-- السؤال الثاني عشر -->
+        <div class="question-card">
+            <span class="question-number">السؤال الثاني عشر</span>
+            <div class="question-text">
+                ما أهمية استخدام فرق العمل داخل الإدارة الصفية؟
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>ترتكز أهمية بناء فرق العمل داخل منظومة إدارة الصف على عدة نقاط أساسية:</p>
+                    <ul>
+                        <li>تنمية التعاون الجماعي بين أعضاء الفريق مما يؤدي إلى التكامل بين المهام المختلفة.</li>
+                        <li>تمكين الإدارة الصفية من مواجهة التحديات المحلية والعالمية بكفاءة عالية.</li>
+                        <li>تقديم بدائل متعددة للمشكلات واختيار الأنسب بطريقة جماعية.</li>
+                        <li>تحقيق درجات عالية من الجودة الشاملة في الأداء الإداري.</li>
+                        <li>تبادل الأدوار القيادية بين أعضاء الفريق مما يطلق القدرات الابتكارية.</li>
+                        <li>تدعيم العلاقات الإنسانية والود والاحترام بين أعضاء الفريق.</li>
+                        <li>تحقيق الرضا الوظيفي وإشباع حاجات الأفراد ورفع الروح المعنوية.</li>
+                        <li>تنمية مهارات الابتكار والإبداع وقيم العمل والإنجاز.</li>
+                        <li>تحقيق الشراكة المجتمعية مع مؤسسات المجتمع المحلي.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 73-76</span>
+        </div>
+
+        <!-- السؤال الحادي عشر -->
+        <div class="question-card">
+            <span class="question-number">السؤال الحادي عشر</span>
+            <div class="question-text">
+                ما ملامح إدارة الصف في ضوء مدخل إدارة الجودة الشاملة؟
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>تتميز إدارة الصف في ضوء مدخل إدارة الجودة الشاملة بالملامح التالية:</p>
+                    <ul>
+                        <li><strong>التركيز على العملاء:</strong> تلبية احتياجات الطلاب وأولياء الأمور كعملاء رئيسيين.</li>
+                        <li><strong>المشاركة الجماعية:</strong> إشراك جميع عناصر المؤسسة في تحسين العملية التعليمية.</li>
+                        <li><strong>التحسين المستمر:</strong> العمل على تطوير الأداء بشكل دائم ومستمر.</li>
+                        <li><strong>القيادة الفعالة:</strong> توجيه الجهود نحو تحقيق الأهداف التربوية المنشودة.</li>
+                        <li><strong>إدارة المعلومات:</strong> استخدام البيانات في اتخاذ القرارات وتقييم الأداء.</li>
+                        <li><strong>الجودة الشاملة:</strong> تطبيق معايير الجودة على جميع جوانب العملية التعليمية.</li>
+                        <li><strong>المرونة:</strong> القدرة على التكيف مع التغيرات والظروف المختلفة.</li>
+                        <li><strong>المساءلة:</strong> تحمل المسؤولية عن النتائج والأداء.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 73-76</span>
+        </div>
+
+        <!-- السؤال العاشر -->
+        <div class="question-card">
+            <span class="question-number">السؤال العاشر</span>
+            <div class="question-text">
+                ما متطلبات إدارة الجودة الشاملة في الإدارة الصفية؟
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>تتطلب إدارة الجودة الشاملة في الإدارة الصفية توفر عدة متطلبات أساسية:</p>
+                    <ul>
+                        <li><strong>التزام القيادة:</strong> دعم الإدارة المدرسية لتطبيق معايير الجودة.</li>
+                        <li><strong>وضوح الرؤية والرسالة:</strong> تحديد أهداف واضحة للجودة في العملية التعليمية.</li>
+                        <li><strong>تدريب المعلمين:</strong> تأهيل المعلمين على أساليب إدارة الجودة الشاملة.</li>
+                        <li><strong>مشاركة الطلاب:</strong> إشراك الطلاب في عملية التحسين المستمر.</li>
+                        <li><strong>نظام معلومات فعال:</strong> توفير بيانات دقيقة للتقييم واتخاذ القرار.</li>
+                        <li><strong>تقييم الأداء:</strong> قياس النتائج باستمرار ومقارنتها بالمعايير.</li>
+                        <li><strong>التواصل الفعال:</strong> تبادل المعلومات بين جميع الأطراف بشكل مستمر.</li>
+                        <li><strong>المرونة والتكيف:</strong> القدرة على التغيير والتطوير حسب الاحتياجات.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 73-76</span>
+        </div>
+
+        <!-- السؤال التاسع -->
+        <div class="question-card">
+            <span class="question-number">السؤال التاسع</span>
+            <div class="question-text">
+                وضح عناصر نجاح الإدارة الصفية.
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>تتضمن عناصر نجاح الإدارة الصفية ما يلي:</p>
+                    <ul>
+                        <li><strong>الكفاية المعرفية:</strong> إلمام المعلم بكافة جوانب المواد التعليمية التي يدرسها.</li>
+                        <li><strong>الحماس والدافعية:</strong> توفر الحماس لدى المعلم وتحسين أدائه داخل الغرفة الصفية.</li>
+                        <li><strong>المرونة والحزم:</strong> القدرة على التصرف الجيد في المواقف التعليمية المختلفة.</li>
+                        <li><strong>نشر جو الود والألفة:</strong> تقوية العلاقة بين المعلم وطلابه.</li>
+                        <li><strong>معرفة الطرق المثلى للتعامل:</strong> تحفيز الطلاب وتشجيعهم على التعلم.</li>
+                        <li><strong>وضوح الأهداف:</strong> تحديد الأهداف التعليمية بوضوح منذ بداية الحصة.</li>
+                        <li><strong>التخطيط المسبق:</strong> التحضير الجيد للدرس بما يمنع حدوث المشكلات.</li>
+                        <li><strong>تنويع الأساليب:</strong> استخدام طرق تدريس متنوعة تناسب احتياجات الطلاب.</li>
+                        <li><strong>التعزيز المستمر:</strong> تشجيع السلوك الإيجابي وتقدير مجهود الطلاب.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 6-7 (موضوع)</span>
+        </div>
+
+        <!-- السؤال الثامن -->
+        <div class="question-card">
+            <span class="question-number">السؤال الثامن</span>
+            <div class="question-text">
+                ناقش إحدى المشكلات البسيطة التي لها أثر مباشر على العملية التعليمية التعليمية.
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>المشكلات البسيطة التي لها أثر مباشر على العملية التعليمية هي مشكلات تواجه المعلم في غرفة الصف تؤدي إلى إعاقة قدرة الطالب على التعلم أو تدخل في قدرة المعلم على التدريس. ومن أبرز هذه المشكلات وأساليب التعامل معها:</p>
+                    <ul>
+                        <li><strong>الوقاية خير من العلاج:</strong> وضع قواعد منظمة للصف وصياغة التعليمات المناسبة لكل فئة.</li>
+                        <li><strong>استخدام التلميح لا التصريح:</strong> مثل النظر إلى الطلبة المنشغلين، التربيت على الكتف، التحرك باتجاه الطالب المخل بالنظام.</li>
+                        <li><strong>مدح السلوك الجيد وتعزيزه:</strong> تدفع الطلاب نحو السلوك المرغوب ومنحهم الفرصة للاختيار.</li>
+                        <li><strong>التذكير اللفظي البسيط:</strong> تصحيح مسار الطالب عند السلوك مباشرة.</li>
+                        <li><strong>التأكيد المستمر:</strong> تكرار التذكير متجاهلاً المناقشات والعذر.</li>
+                        <li><strong>تحمل النتائج:</strong> فرض الخيار على الطالب بشكل معتدل (إخراج من الصف، حرمان من جزء من الاستراحة).</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 83-84</span>
+        </div>
+
+        <!-- السؤال السابع -->
+        <div class="question-card">
+            <span class="question-number">السؤال السابع</span>
+            <div class="question-text">
+                وضح العوامل المؤثرة في الإدارة الصفية.
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>تتأثر الإدارة الصفية بعدة عوامل رئيسية:</p>
+                    <ul>
+                        <li><strong>النظام المدرسي:</strong> الإدارة الصفية جزء من الإدارة المدرسية المتكاملة.</li>
+                        <li><strong>نوع الإدارة الصفية:</strong> النمط المتبع (تسلطي، ديمقراطي، فوضوي) ولكل أثره.</li>
+                        <li><strong>تحديد الأهداف التعليمية:</strong> يساهم في تنظيم الطلبة وتوجيههم.</li>
+                        <li><strong>وضع قوانين وقواعد صفية:</strong> تساعد الطلبة على الالتزام والشعور بالأهمية.</li>
+                        <li><strong>التعزيز المستمر:</strong> يزيد اهتمام الطلبة بتطبيق القواعد.</li>
+                        <li><strong>استراتيجية المعلم الصغير:</strong> خلق أجواء التفاعل وتبادل الخبرات.</li>
+                        <li><strong>قدرة المعلم على ضبط المشكلات:</strong> تعديل السلوك بعيداً عن العداوة.</li>
+                        <li><strong>العوامل الشخصية للمعلم:</strong> خصائصه الشخصية والأدائية وتأهيله.</li>
+                        <li><strong>العوامل المتعلقة بالطالب:</strong> سن الطالب، سلوكه، مستواه المعيشي.</li>
+                        <li><strong>البيئة التعليمية:</strong> المبنى المدرسي، جاهزية غرفة الصف.</li>
+                        <li><strong>المنهج الدراسي:</strong> تناسبه مع احتياجات الطلبة والفترة الزمنية.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 82-83</span>
+        </div>
+
+        <!-- السؤال السادس -->
+        <div class="question-card">
+            <span class="question-number">السؤال السادس</span>
+            <div class="question-text">
+                وضح العوامل المؤثرة في الإدارة الصفية.
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>(نفس إجابة السؤال السابع - تكرار في الكتاب)</p>
+                    <ul>
+                        <li>النظام المدرسي والإدارة المدرسية.</li>
+                        <li>نوع الإدارة الصفية المتبع (التسلطي، الديمقراطي، الفوضوي).</li>
+                        <li>تحديد وصياغة الأهداف التعليمية بوضوح.</li>
+                        <li>وضع قوانين وقواعد صفية واضحة.</li>
+                        <li>التعزيز المستمر للسلوك الإيجابي.</li>
+                        <li>استراتيجية المعلم الصغير وتبادل الأدوار.</li>
+                        <li>قدرة المعلم على ضبط المشكلات والمشاغبات.</li>
+                        <li>العوامل المتعلقة بالمعلم (الشخصية، التأهيل، الأساليب).</li>
+                        <li>العوامل المتعلقة بالطالب (السن، السلوك، القدرات).</li>
+                        <li>البيئة التعليمية (المبنى، غرفة الصف، الإمكانات).</li>
+                        <li>المنهج الدراسي (التناسب، الإشباع، الوسائل).</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 82-83</span>
+        </div>
+
+        <!-- السؤال الخامس -->
+        <div class="question-card">
+            <span class="question-number">السؤال الخامس</span>
+            <div class="question-text">
+                اشرح بإيجاز مهام الإدارة الصفية.
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>تتضمن مهام الإدارة الصفية ما يلي:</p>
+                    <ul>
+                        <li><strong>التخطيط:</strong> وضع الخطط العامة لإدارة الصف (الزمنية، العلاجية، الدراسية) وتحضير الدروس اليومية.</li>
+                        <li><strong>القيادة:</strong> قيادة الطلبة وتوجيههم نحو تحقيق الأهداف التربوية، والتحكم في تنفيذ الخطط.</li>
+                        <li><strong>التنظيم:</strong> تنظيم سير العملية التعليمية وتنظيم الوقت بدقة، ووضع قواعد للسلوك والروتين الصفي.</li>
+                        <li><strong>التقويم:</strong> التأكد من تحقق الأهداف التربوية وتقييم مدى إتقان الطلبة للمهارات.</li>
+                        <li><strong>تنظيم البيئة:</strong> تنظيم الظروف الفيزيقية وتوزيع الأثاث والتجهيزات بما يتناسب مع الأهداف.</li>
+                        <li><strong>ضبط السلوك:</strong> وضع قواعد صفية واضحة وإشراك الطلاب في صياغتها.</li>
+                        <li><strong>إدارة الوقت:</strong> توزيع الحصة بشكل متوازن بين الشرح والأنشطة والتقييم.</li>
+                        <li><strong>التفاعل والتواصل:</strong> بناء علاقات إيجابية قائمة على الاحترام والثقة.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 5-6</span>
+        </div>
+
+        <!-- السؤال الرابع -->
+        <div class="question-card">
+            <span class="question-number">السؤال الرابع</span>
+            <div class="question-text">
+                ما مميزات القيادة الشورية في الإدارة الصفية؟
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>تتميز القيادة الشورية (الديمقراطية) في الإدارة الصفية بعدة مميزات:</p>
+                    <ul>
+                        <li>توفير جو من المودة والطمأنينة داخل الفصل الدراسي.</li>
+                        <li>إتاحة فرص متكافئة أمام الطلاب للتعبير عن آرائهم.</li>
+                        <li>استثارة اهتمام الطلاب وتشجيعهم على المشاركة.</li>
+                        <li>إظهار احترام الطلاب لبعضهم وللمعلم.</li>
+                        <li>إعطاء دفعة معنوية للطلاب وتعزيز الاندماج فيما بينهم.</li>
+                        <li>إشراك الطلاب في العملية التعليمية بشكل إيجابي.</li>
+                        <li>الحرص على خلق جو مليء بالطمأنينة والمودة.</li>
+                        <li>تنمية الاعتماد على النفس وتحمل المسؤولية لدى الطلاب.</li>
+                        <li>زيادة التفاعل فيما بين الطلاب داخل وخارج الصف.</li>
+                        <li>الإقبال على الأنشطة المدرسية والصفية بكامل الرضا.</li>
+                        <li>اكتساب الطلاب لاتجاهات إيجابية كضبط النفس وتحمل المسؤولية.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 5 (موضوع)</span>
+        </div>
+
+        <!-- السؤال الثالث -->
+        <div class="question-card">
+            <span class="question-number">السؤال الثالث</span>
+            <div class="question-text">
+                ما أثر النمط الفوضوي في الإدارة الصفية على الطلاب؟
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>يترك النمط الفوضوي (السائب) آثاراً سلبية خطيرة على الطلاب:</p>
+                    <ul>
+                        <li>قلة الإنتاج التعليمي للطالب بحضور المعلم.</li>
+                        <li>هدر الوقت في الأسئلة والمعلومات دون استغلال مناسب.</li>
+                        <li>عدم اكتساب الطلاب للاتجاهات المرغوبة كضبط النفس وتحمل المسؤولية.</li>
+                        <li>لامبالاة الطالب في المواقف التعليمية وعدم الجدية في التفاعل الصفي.</li>
+                        <li>شعور الطلاب بالقلق وعدم الثقة بالنفس لأنهم لا يوجهون نحو الأهداف.</li>
+                        <li>ضعف في قدرة الطلاب على التخطيط للأعمال المطلوبة منهم.</li>
+                        <li>تركيز الطلاب على حفظ المادة الدراسية دون فهم ووعي.</li>
+                        <li>إهمال الطلاب للواجبات المنزلية لعدم محاسبة المعلم لهم.</li>
+                        <li>عدم صقل شخصية الطالب أو تنمية موهبته واستغلال قدراته الفعالة.</li>
+                        <li>تعميم الفوضى داخل المؤسسة التعليمية.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 5 (موضوع)</span>
+        </div>
+
+        <!-- السؤال الثاني -->
+        <div class="question-card">
+            <span class="question-number">السؤال الثاني</span>
+            <div class="question-text">
+                ما أثر النمط الديمقراطي في الإدارة الصفية على الطلاب؟
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>يترك النمط الديمقراطي آثاراً إيجابية على الطلاب:</p>
+                    <ul>
+                        <li>الإقبال على المعلم والمدرسة برغبة صادقة.</li>
+                        <li>زيادة التفاعل فيما بين الطلاب داخل وخارج الصف.</li>
+                        <li>الإقبال على الأنشطة المدرسية والصفية بكامل الرضا.</li>
+                        <li>إحساس الطلاب بالمسؤولية وإدراك أهمية الواجبات والعمل على إنجازها.</li>
+                        <li>حب الطلاب للعمل والتعاون فيما بينهم لإنجاز الأفضل.</li>
+                        <li>تحقيق الأهداف المرغوبة من التعلم على المدى البعيد.</li>
+                        <li>اكتساب الطلاب لاتجاهات إيجابية كضبط النفس وتحمل المسؤولية.</li>
+                        <li>تنمية الاعتماد على النفس والثقة بالقدرات.</li>
+                        <li>الاستجابة للمعلم من قناعة ورغبة لا من خوف.</li>
+                        <li>تعزيز القدرة على التحصيل والمبادرة.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 5 (موضوع)</span>
+        </div>
+
+        <!-- السؤال الأول -->
+        <div class="question-card">
+            <span class="question-number">السؤال الأول</span>
+            <div class="question-text">
+                ما أثر النمط التسلطي في الإدارة الصفية على الطلاب؟
+            </div>
+            <div class="answer-section">
+                <div class="answer-title">الإجابة:</div>
+                <div class="answer-content">
+                    <p>يترك النمط التسلطي (الأوتوقراطي) آثاراً سلبية على الطلاب:</p>
+                    <ul>
+                        <li>فقدان الطالب للأمن والطمأنينة ويعيش في جو من القلق والخوف.</li>
+                        <li>إضعاف ثقة الطالب بنفسه وقدرته على تحمل المسؤولية.</li>
+                        <li>يقتل طموح الطالب ويحد من آماله ويفقده القدرة على التعاون.</li>
+                        <li>يفقد الطالب الاستقلالية والاعتماد على النفس.</li>
+                        <li>يستجيب الطالب للمعلم خوفاً من العقاب لا من قناعة الرضا.</li>
+                        <li>ضعف قدرة الطالب على التحصيل والأخذ بزمام المبادرة.</li>
+                        <li>عدم رغبة الطالب في اكتساب المعرفة والتحصيل.</li>
+                        <li>الغش في الامتحانات وكراهية المدرسة والهروب منها.</li>
+                        <li>الخنوع الذي قد تليه ثورة وشيكة على المعلم.</li>
+                        <li>عدم تنمية اتجاهات إيجابية كضبط النفس.</li>
+                        <li>حدوث الفوضى والتسيب في حالة غياب المعلم.</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="page-reference">الصفحة: 5 (موضوع)</span>
+        </div>
+
+        <div class="footer">
+            <p>تم إعداد هذه الإجابات استناداً إلى محتوى الكتاب المرفق ومصادر تعليمية موثوقة</p>
+            <p>© 2025/2026م - قسم التربية المقارنة والإدارة التعليمية</p>
+        </div>
+    </div>
+</body>
+</html>
